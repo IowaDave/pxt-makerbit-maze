@@ -1,7 +1,7 @@
 # pxt-makerbit-maze
 Interactive maze game for BBC micro:bit and MakerBit
 
-The script named xyzzy is designed to be copied and pasted into the JavaScript frame of a MakeCode editor.  Click on the file name. When it opens, click on the "Raw" link. Select all of the text, copy it, and paste it into the editor.  **Leave the editor in JavaScript mode. This is not designed to be a "blocks" program"**.
+The script named "makerbit-maze.ts" is designed to be copied and pasted into the JavaScript frame of a MakeCode editor.  Click on the file name. When it opens, click on the "Raw" link. Select all of the text, copy it, and paste it into the editor.  **Leave the editor in JavaScript mode. This is not designed to be a "blocks" program"**.
 
 You will need to import the MakerBit-touch extension for MakeCode, as this code uses the touchpins.
 
@@ -27,7 +27,7 @@ Divide the area of the cardboard into three sections, as follows:
   * Connect the touchpin to pin 10 in the touch header on the MakerBit
 3. Four touchpins, arranged in a diamond, or "plus-sign" configuration. These are the "directional" touchpins. Use them to signal which way you want to move in the maze.
   * Label the pins "Up", "Left", "Right" and "Down". Do this in such a way that it makes sense when you look at it.
-  * Connect the touchpins to the touch header on the MakerBiot as follows:
+  * Connect the touchpins to the touch header on the MakerBit as follows:
     * Up to pin 6
     * Left to pin 7
     * Right to pin 8
@@ -51,7 +51,7 @@ The LED display on the micro:bit shows the cell you are presently in. You can mo
 
 Use the directional touchpins to navigate. Your first move is to the right. Your goal is to emerge from the lower-right corner of the maze. The exit is indicated by a double right-side wall. Woohoo! You won!
 
-The game automatically drops a breadcrumb when you leave a cell. To view the breadcrumbs, press touchpin 10. The LED will illuminate to indicate that breadcrumbs are being shown, and you will see a dot in the center of the display when you enter a cell where you have been before. To stop seeing the breadcrumbs, touch the touchpin #10 again. It is a toggle.
+The game automatically drops a breadcrumb when you leave a cell. During play, you may view the breadcrumbs. Press touchpin 10. The LED will illuminate to indicate that breadcrumbs are being shown, and you will see a dot in the center of the display when you enter a cell where you have been before. To stop seeing the breadcrumbs, touch the touchpin #10 again. It is a toggle. Note that breadcrumb display can be activated only while navigating in the maze.
 
 
 
