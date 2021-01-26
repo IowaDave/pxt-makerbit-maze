@@ -1,9 +1,11 @@
 # pxt-makerbit-maze
 Interactive maze game for BBC micro:bit and MakerBit
 
-The script named "makerbit-maze.ts" is designed to be copied and pasted into the JavaScript frame of a MakeCode editor.  Click on the file name. When it opens, click on the "Raw" link. Select all of the text, copy it, and paste it into the editor.  **Leave the editor in JavaScript mode. This is not designed to be a "blocks" program"**.
+The script named "makerbit-maze.ts" is designed to be copied and pasted into the JavaScript frame of a MakeCode editor.  Click on the file name. When it opens, click on the "Raw" link. Select all of the text, copy it, and paste it into the editor.  **Leave the editor in JavaScript mode. This version is not designed to be a "blocks" program"**. 
 
-You will need to import the MakerBit-touch extension for MakeCode, as this code uses the touchpins.
+*Maybe I'll develop some blocks from it in the future. For now, this file of 804 lines is the whole shebang.*
+
+You will need to import the MakerBit-touch extension into the MakeCode editor, as this code uses the MakerBit's touchpins.
 
 Make a game control panel. You will need:
 
