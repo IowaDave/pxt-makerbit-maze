@@ -1,9 +1,26 @@
 # pxt-makerbit-maze
-Interactive maze game for BBC micro:bit and MakerBit
+Create interactive maze games for the BBC micro:bit.
 
-The script named "makerbit-maze.ts" is designed to be copied and pasted into the JavaScript frame of a MakeCode editor.  Click on the file name. When it opens, click on the "Raw" link. Select all of the text, copy it, and paste it into the editor.  **Leave the editor in JavaScript mode. This version is not designed to be a "blocks" program"**. 
+This extension gives the MakeCode editor a set of custom blocks designed to create and interact with a virtual maze.
 
-*Maybe I'll develop some blocks from it in the future. For now, this file of 804 lines is the whole shebang.*
+maze.newMaze(rows, columns) creates a grid of "cells" arranged in rows a columns. Visualize it as a rectangular maze. The entrance is at the upper-left corner. The exit is at the lower-right corner.
+
+The maze can be as small as 2 rows of 2 cells each: maze.newMaze(2,2);
+
+It can be as large as 15 rows of 15 cells each: newMaze(15,15);
+
+It does not have to be square; the row and column and column numbers can be different: newMaze(8, 10);
+
+After the new maze has been created, this function actomatically displays the cell at the entrance to the maze. The display appears on the LED panel of the mciro:bit.
+
+maze.maximumDimension() is a reporter block that gives the maximum number of columns or rows. If you choose to edit these custom blocks, keep in mind to edit both the newMaze() function and the maximumDimension() function so they both use the same maximum value. By the way, the minimum number of rows or columns is 2.
+
+maze.move(<Up, Down, Left, Right>) attempts to move the player's position to a new cell that is Up, Down, Left or Right of the cell currently displayed. If the cell has a boundary in that direction, the boundary flashes and the position does not change. If there is not a boundary, the position is updated and the new cell is displayed on the micro:bit.
+ 
+ maze.crumbs(<On, Off>) turns the display of "breadcrumbs" on or off. Internally, the custom code conditions a flag to indicate when a player has visited a cell. The player can use this function to tell the code whether to display the "breadcrumb" the next time the player visits that cell.
+
+DAVID: THIS NEEDS MORE EDITING.
+
 
 You will need to import the MakerBit-touch extension into the MakeCode editor, as this code uses the MakerBit's touchpins.
 
