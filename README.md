@@ -1,40 +1,27 @@
 # pxt-makerbit-maze
-Create interactive maze games for the BBC micro:bit.
+## Creating an interactive maze game for the BBC micro:bit.
 
-This extension gives the MakeCode editor a set of custom blocks designed to create and interact with a virtual maze.
+Yes, the micro:bit can be an interactive game! Do you like mazes? Imagine exploring a maze inside a micro:bit. With a little bit of DIY hardware and some available, custom MakeCode blocks, you can!
 
-maze.newMaze(rows, columns) creates a grid of "cells" arranged in rows a columns. Visualize it as a rectangular maze. The entrance is at the upper-left corner. The exit is at the lower-right corner.
+## The Concept of a micro:bit Maze
 
-The maze can be as small as 2 rows of 2 cells each: maze.newMaze(2,2);
+## Build a Game Console
 
-It can be as large as 15 rows of 15 cells each: newMaze(15,15);
+## Grab the Code
 
-It does not have to be square; the row and column and column numbers can be different: newMaze(8, 10);
-
-After the new maze has been created, this function actomatically displays the cell at the entrance to the maze. The display appears on the LED panel of the mciro:bit.
-
-maze.maximumDimension() is a reporter block that gives the maximum number of columns or rows. If you choose to edit these custom blocks, keep in mind to edit both the newMaze() function and the maximumDimension() function so they both use the same maximum value. By the way, the minimum number of rows or columns is 2.
-
-maze.move(<Up, Down, Left, Right>) attempts to move the player's position to a new cell that is Up, Down, Left or Right of the cell currently displayed. If the cell has a boundary in that direction, the boundary flashes and the position does not change. If there is not a boundary, the position is updated and the new cell is displayed on the micro:bit.
- 
- maze.crumbs(<On, Off>) turns the display of "breadcrumbs" on or off. Internally, the custom code conditions a flag to indicate when a player has visited a cell. The player can use this function to tell the code whether to display the "breadcrumb" the next time the player visits that cell.
-
-DAVID: THIS NEEDS MORE EDITING.
-
+## Explore on Your Own
 
 You will need to import the MakerBit-touch extension into the MakeCode editor, as this code uses the MakerBit's touchpins.
 
 Make a game control panel. You will need:
 
 * a micro:bit, version 1 or later
-* a MakerBit
 * a USB cable to connect with your computer
+* a MakerBit by Roger Wagner
 * an LED 
 * six touchpins with backs
 * jumper wires for the LED and the touchpins
-* cardboard that you can write on, and something to write with
-* a tool to poke little holes in the cardboard
-* a note from your psychiatrist certifying that you can remain calm enough to handle this
+* a small box, tape, a few simple tools, and a way to label the components you will place on the box.
 
 Divide the area of the cardboard into three sections, as follows:
 1. One touchpin off by itself.
