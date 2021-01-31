@@ -117,6 +117,21 @@ Are you following the slightly-less-easy way? In that case, after you import the
 
 Either way, you have got the code now. Download the project onto the micro:bit and start playing!
 
+#### For Code Wizards Only
+So, how do those touchpins cause things to happen in MakeCode?
+
+The MakerBit has special hardware that detects an "event" when someone touches some metal that is connected to a pin in the gray header. Custome blocks in the MakerBit extension MakeCode about the event. For example, the following block triggers an action when the player touches a pin that connects to position number 10 in the gray header. Keep in mind that my version of the game console connects that pin to the touchpin labeled, Rows.
+
+![Event block](https://raw.githubusercontent.com/IowaDave/pxt-makerbit-maze/main/images/touchpin_10_block.jpg)
+
+The Event block acts fast. All it does is to switch a true/false variable, named "setRowsDesired" to "true" from "false". This is an example of using a variable as a "sentinel" or a "flag". The change in the flag gets picked up and acted on in another block.
+
+![Event action block](https://raw.githubusercontent.com/IowaDave/pxt-makerbit-maze/main/images/handle_touchpin_10_block.jpg)
+
+A series of if-then blocks in the "forever" part of my game code checks for changes in the true/false variables that the different touchpins manipulate. The block shown above is activated whenever the setRowsDesired variable is found to be true. The action is to call a function that handles the request.
+
+All of the actions that are possible for a player to take in the game are triggered in the main forever loop by changes in various sentinel flags, brought on by the player touching a touchpin. It's a crude example of so-called event-driven software design.
+
 ## Explore!
 
 Here is how to play. First, set the dimensions you want for your maze.
@@ -146,7 +161,7 @@ The game automatically drops a breadcrumb when you leave a cell. During play, yo
 To stop seeing the breadcrumbs, touch the touchpin again. It is a toggle. Note that breadcrumb display can be activated only while navigating in the maze.
 
 ## What else can you do with the maze extension blocks?
-That's a question only you can answer. Could you write MakeCode to use a joystick to move around in the maze?  Could you make it a timed game, like a race against a clock? The MakerBit makes it easy to hook up an MP3 player and an LCD display. Or a NeoPixel device. What idea of your own will you try first?
+That's a question only you can answer. Could you write MakeCode to use a joystick to move around in the maze?  Could you make it a timed game, like a race against a clock? The MakerBit makes it easy to hook up an MP3 player and an LCD display. Or a NeoPixel device. How would you use things like that to make your game more fun to play? What idea of your own will you try first?
 
 
 
