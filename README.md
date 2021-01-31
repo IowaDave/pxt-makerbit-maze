@@ -1,13 +1,81 @@
 # pxt-makerbit-maze
 ## Creating an interactive maze game for the BBC micro:bit.
 
-Yes, the micro:bit can be an interactive game! Do you like mazes? Imagine exploring a maze inside a micro:bit. With a little bit of DIY hardware and some available, custom MakeCode blocks, you can!
+Yes, the micro:bit can be an interactive game! Do you like mazes? Imagine exploring a maze hidden inside a micro:bit. With a little bit of DIY hardware and some available, custom MakeCode blocks, you can!
 
 ## The Concept of a micro:bit Maze
 
 ## Build a Game Console
+A friend of mine served as Sea Bee in the U.S. Navy. He loves telling stories about a day when the admiral commanding his unit spoke to them.
 
-## Grab the Code
+"There are five ways to build anything!" the Admiral growled. "The right way. The wrong way. The Navy way. Your way. And MY WAY!" He went on, "Any questions how we're going to build things in this outfit?"
+
+Well, when it comes to building your game console for your maze game, I hope you will build it YOUR WAY. Because that is what the Maker movement is all about.
+
+But let me show you how I put one together, in case it might give you some ideas. I'm using the LED panel of the micro:bit as the game's display screen.
+
+#### Gather the following materials:
+* a micro:bit, version 1 or later
+* a USB cable to connect with a computer
+* a MakerBit by Roger Wagner
+* an LED 
+* seven earring backs from the craft store, with the little clips that hold them in place
+* jumper wires for the LED and the pins
+* a small box (I re-used an Amazon delivery box.)
+* a label to keep things organized. Feel free to print a copy of my PDF, if you wish.
+
+#### Mount the MakerBit and the micro:bit
+I cut a slot under one of the box flaps. The micro:bit can stick out through this slot. The MakerBit is secured inside the box with some painter's tape.
+
+#### Close the box top and label it.
+I taped the box shut. A tidy label can make the game console look nice. I simply taped a printout of my PDF on top.
+
+#### Install the pins and the LED
+This was easy because my label had asterisks where I wanted the components to go. I poked small holes through the asterisks. Then I opened the bottom of the box to gain access to the inside. 
+
+Push the LED -- from the inside! -- out through one of the asterisks labeled "Show Breadcrumbs". Try to size the hole for the LED so it goes in without much difficulty but remains tight enough to help hold the bulb in place. I picked the spot directly underneath the word, "Show". Bend the legs of the LED sideways and secure the component from underneath with tape. Then push the earring backs through the remaining asterisks -- from the outside! Secure those with the little clips. You want everything to be nice and solid where it goes through the box lid.
+
+#### Connect jumper wires
+Here's where the MakerBit really shines and makes everything easy. It has special-purpose pins that make magic happen. For example, you can connect an LED directly without needing to place a resistor, as you would otherwise have to do if you were using a regular breadboard. Let's do that part first.
+
+Locate the black "header" that has pairs of pins inside, labeled P11 through P16. Find the pair labeled P16. If you look at the MakerBit with the micro:bit at the top, then the notch in the black header will be on its left side. The pin on that side is the electrical "ground" pin. Run a jumper from there to the short leg of the LED. Run another jumper from the other pin to the long leg of the LED. That's it, the LED is ready to work for you.
+
+Now for some real magic. The gray header has 12 pins labeled T5 through T16. The "T" is for Touch. The magic is that if you connect one of those earring backs to one of those pins, the micro:bit can tell when you touch it! Roger Wagner, the designer of the MakerBit, likes to call them Touchpins, because that is how they work. As far as your code is concerned, they act like pushbuttons. But so much easier to hook up, because it takes only one wire to connect a touchpin.
+
+Look closely at the gray header. Pin T5 is in the bottom-right corner. Start there, and run a jumper wire to the touchpin for Show Breadcrumbs. I ran jumpers to the other pins in this order:
+
+6. Left
+7. Up
+8. Right
+9. Down
+10. Rows
+11. Columns
+12. Start New Game
+
+You can organize those connections any way you want to. When we get to the code, you can see how to match up a touchpin with the action you want it to launch.
+
+#### Supply power
+The picture shown here is using the USB cable to bring power from a computer. The MakerBit gives you another way to power your game. It has a round socket the right size for connecting a battery or a "wall wart" charger. 6 volts and 9 volts are typical kinds of batteries you can use. The game will run with only a battery, after you load the code into the micro:bit one time. You'll figure it out.
+
+## Grab the Essential Extensions
+You can write the micro:bit code for your game using the popular MakeCode editor. There are two ways to do this: the easy way and the slightly-less-easy way.
+
+The easy way is to simply load my code directly into the editor. Click the following link: xxx. Do this if you want to replicate my version of a game console and try it out. 
+
+The slightly less easy way is what you will want to do when you begin to write your own game. It's still pretty easy. As in "1-2-3".
+1. Start a new project in MakeCode
+2. Import the maze extension for Makecode. 
+* Click the Extensions icon (a little gear in the upper-right area of the editor window.) 
+* Choose "Extensions"
+* Copy this URL into the search box: https://github.com/iowadave/pxt-maze
+* Click the message that appears.
+3. Import the MakerBit extension for MakeCode. Basically repeat the steps above, but search for "MakerBit". Click the message labeled plain "MakerBit" to get the version having all of its features. 
+
+If you followed the slightly-less-easy steps, you can easily import my game code in the next step.
+
+#### Grab the code
+
+
 
 ## Explore on Your Own
 
