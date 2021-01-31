@@ -10,7 +10,7 @@ Here is the idea: use the LED panel of the micro:bit to show the "walls" as you 
 
 For example, a location in the maze might require you to go around a corner. Here is what it could look like on the micro:bit's display:
 
-https://raw.githubusercontent.com/IowaDave/pxt-maze/master/.github/makecode/turn.jpg
+![A "turn" cell in the maze](https://raw.githubusercontent.com/IowaDave/pxt-maze/master/.github/makecode/turn.jpg)
 
 It's obvious you could move to the left, or down, but not up or to the right. All you would need are some buttons to indicate the direction you want to go, and some code to tell the micro:bit what to do next. Oh, yes, and you would need some code to create the maze in the first place.
 
