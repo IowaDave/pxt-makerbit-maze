@@ -3,6 +3,8 @@
 
 Yes, the micro:bit can be an interactive game! Do you like mazes? Imagine exploring a maze hidden inside a micro:bit. With a little bit of DIY hardware and some available, custom MakeCode blocks, you can!
 
+![Maze Game Console](https://raw.githubusercontent.com/IowaDave/pxt-makerbit-maze/main/images/box_and_label.jpg)
+
 ## The Concept of a micro:bit Maze
 
 ## Build a Game Console
