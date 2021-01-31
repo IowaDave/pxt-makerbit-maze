@@ -46,7 +46,7 @@ Here are some images showing selected examples of the components. You'll need mo
 #### Mount the MakerBit and the micro:bit
 I cut a slot under one of the box flaps. The micro:bit can stick out through this slot. The MakerBit is secured inside the box with some painter's tape.
 
-![Slot for the micro:bit](https://raw.githubusercontent.com/IowaDave/pxt-makerbit-maze/main/images/poke-through.jpg)
+![MakerBit in place](https://raw.githubusercontent.com/IowaDave/pxt-makerbit-maze/main/images/poke_through.jpg)
 
 #### Label the box top, then flip it over and open the bottom.
 I taped the box shut. A tidy label can make the game console look nice. I simply taped a printout of my PDF on top. You are welcome to use it. The link is up there in the components list.
