@@ -16,6 +16,8 @@ It's obvious you could move to the left, or down, but not up or to the right. Al
 
 I wrote an extension package of custom blocks you can use in the MakeCode editor to create mazes and navigate within them. You can read more about that at the following URL: [https://iowadave.github.io/pxt-maze](https://iowadave.github.io/pxt-maze).
 
+This article aims to show how I built an actual game using the custom blocks, an old Amazon delivery box, and that wonderful micro:bit accessory called the MakerBit by Roger Wagner. That's a picture of it, up at the top of the page.
+
 ## Build a Game Console
 A friend of mine served as Sea Bee in the U.S. Navy. He loves telling stories about a day when the admiral commanding his unit spoke to them.
 
@@ -33,7 +35,13 @@ But let me show you how I put one together, in case it might give you some ideas
 * seven earring backs from the craft store, with the little clips that hold them in place
 * jumper wires for the LED and the pins
 * a small box (I re-used an Amazon delivery box.)
-* a label to keep things organized. Feel free to print a copy of my PDF, if you wish.
+* a label to keep things organized. Feel free to print a copy of my PDF, if you wish. Use this link: [https://raw.githubusercontent.com/IowaDave/pxt-makerbit-maze/main/images/Maze_Console.pdf](https://raw.githubusercontent.com/IowaDave/pxt-makerbit-maze/main/images/Maze_Console.pdf)
+
+Here are some images showing selected examples of the components. You'll need more pins and jumper wires than they show. Re-check the quantities in that list, above. 
+
+![Examples of Components](https://raw.githubusercontent.com/IowaDave/pxt-makerbit-maze/main/images/components.jpg)
+<br><br>
+![MakerBit and micro:bit](https://raw.githubusercontent.com/IowaDave/pxt-makerbit-maze/main/images/bits.jpg)
 
 #### Mount the MakerBit and the micro:bit
 I cut a slot under one of the box flaps. The micro:bit can stick out through this slot. The MakerBit is secured inside the box with some painter's tape.
