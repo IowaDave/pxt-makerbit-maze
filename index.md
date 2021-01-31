@@ -60,8 +60,6 @@ This was easy because my label had asterisks where I wanted the components to go
 
 Push the LED -- from the inside! -- out through one of the asterisks labeled "Show Breadcrumbs". Try to size the hole for the LED so it goes in without much difficulty but remains tight enough to help hold the bulb in place. I picked the spot directly underneath the word, "Show". Bend the legs of the LED sideways and secure the component from underneath with tape. Then push the earring backs through the remaining asterisks -- from the outside! Secure those with the little clips. You want everything to be nice and solid where it goes through the box lid.
 
-![MakerBit and micro:bit](https://raw.githubusercontent.com/IowaDave/pxt-makerbit-maze/main/images/bits.jpg)
-
 #### Connect jumper wires
 Here's where the MakerBit really shines and makes everything easy. It has special-purpose pins that make magic happen. For example, you can connect an LED directly without needing to place a resistor, as you would otherwise have to do if you were using a regular breadboard. Let's do that part first.
 
