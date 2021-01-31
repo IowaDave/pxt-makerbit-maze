@@ -3,9 +3,18 @@
 
 Yes, the micro:bit can be an interactive game! Do you like mazes? Imagine exploring a maze hidden inside a micro:bit. With a little bit of DIY hardware and some available, custom MakeCode blocks, you can!
 
-![Maze Game Console](https://raw.githubusercontent.com/IowaDave/pxt-makerbit-maze/main/images/box_and_label.jpg)
+![Maze Game Console](https://raw.githubusercontent.com/IowaDave/pxt-makerbit-maze/main/images/console.jpg)
 
 ## The Concept of a micro:bit Maze
+Here is the idea: use the LED panel of the micro:bit to show the "walls" as you move from one place to another in a virtual maze stored in the device's memory. Navigate from one location to the next, until you find your way to the Exit. Hoorah! You win!
+
+For example, a location in the maze might require you to go around a corner. Here is what it could look like on the micro:bit's display:
+
+https://raw.githubusercontent.com/IowaDave/pxt-maze/master/.github/makecode/turn.jpg
+
+It's obvious you could move to the left, or down, but not up or to the right. All you would need are some buttons to indicate the direction you want to go, and some code to tell the micro:bit what to do next. Oh, yes, and you would need some code to create the maze in the first place.
+
+I wrote an extension package of custom blocks you can use in the MakeCode editor to create mazes and navigate within them. You can read more about that at the following URL: [https://iowadave.github.io/pxt-maze](https://iowadave.github.io/pxt-maze).
 
 ## Build a Game Console
 A friend of mine served as Sea Bee in the U.S. Navy. He loves telling stories about a day when the admiral commanding his unit spoke to them.
