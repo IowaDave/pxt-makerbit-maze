@@ -16,7 +16,7 @@ It's obvious you could move to the left, or down, but not up or to the right. Al
 
 I wrote an extension package of custom blocks you can use in the MakeCode editor to create mazes and navigate within them. You can read more about that at the following URL: [https://iowadave.github.io/pxt-maze](https://iowadave.github.io/pxt-maze).
 
-This article aims to show how I built an actual game using the custom blocks, an old Amazon delivery box, and that wonderful micro:bit accessory called the MakerBit by Roger Wagner. That's a picture of it, up at the top of the page.
+This article aims to show how I built an actual game using the custom blocks, an old Amazon delivery box, and that wonderful micro:bit accessory called the MakerBit by Roger Wagner. That's a picture of the game console, up at the top of the page.
 
 ## Build a Game Console
 A friend of mine served as Sea Bee in the U.S. Navy. He loves telling stories about a day when the admiral commanding his unit spoke to them.
@@ -35,9 +35,9 @@ But let me show you how I put one together, in case it might give you some ideas
 * seven earring backs from the craft store, with the little clips that hold them in place
 * jumper wires for the LED and the pins
 * a small box (I re-used an Amazon delivery box.)
-* a label to keep things organized. Feel free to print a copy of my PDF, if you wish. Use this link: [https://raw.githubusercontent.com/IowaDave/pxt-makerbit-maze/main/images/Maze_Console.pdf](https://raw.githubusercontent.com/IowaDave/pxt-makerbit-maze/main/images/Maze_Console.pdf)
+* a label to keep things organized. Feel free to download and print a copy of my PDF, if you wish. Use this link: [https://raw.githubusercontent.com/IowaDave/pxt-makerbit-maze/main/images/Maze_Console.pdf](https://raw.githubusercontent.com/IowaDave/pxt-makerbit-maze/main/images/Maze_Console.pdf)
 
-Here are some images showing selected examples of the components. You'll need more pins and jumper wires than they show. Re-check the quantities in that list, above. 
+Here are some images showing selected examples of the components. You'll need more jumper wires than they show. Re-check the quantities in that list, above. 
 
 ![Examples of Components](https://raw.githubusercontent.com/IowaDave/pxt-makerbit-maze/main/images/components.jpg)
 <br><br>
@@ -58,24 +58,28 @@ After placing the label, I flipped the box over and opened the bottom to gain ac
 #### Install the pins and the LED
 This was easy because my label had asterisks where I wanted the components to go. I poked small holes through the asterisks. 
 
-Push the LED -- from the inside! -- out through one of the asterisks labeled "Show Breadcrumbs". Try to size the hole for the LED so it goes in without much difficulty but remains tight enough to help hold the bulb in place. I picked the spot directly underneath the word, "Show". Bend the legs of the LED sideways and secure the component from underneath with tape. Then push the earring backs through the remaining asterisks -- from the outside! Secure those with the little clips. You want everything to be nice and solid where it goes through the box lid.
+Push the LED -- from the inside! -- out through one of the asterisks labeled "Show Breadcrumbs". Try to size the hole for the LED so it goes in without much difficulty but remains tight enough to help hold the bulb in place. I picked the spot directly underneath the word, "Show". Bend the legs of the LED sideways and secure the component from underneath with tape. 
+
+Then push the earring backs through the remaining asterisks -- from the outside! Secure those with the little clips. You want everything to be nice and solid where it goes through the box lid.
 
 #### Connect jumper wires
-Here's where the MakerBit really shines and makes everything easy. It has special-purpose pins that make magic happen. For example, you can connect an LED directly without needing to place a resistor, as you would otherwise have to do if you were using a regular breadboard. Let's do that part first.
+Here's where the MakerBit really shines and makes everything easy. It has special-purpose hardware that makes magic happen. For example, you can connect an LED directly without needing to place a resistor, as you would otherwise have to do if you were using a regular breadboard. Let's do that part first.
 
-Locate the black "header" that has pairs of pins inside, labeled P11 through P16. Find the pair labeled P16. If you look at the MakerBit with the micro:bit at the top, then the notch in the black header will be on its left side. The pin on that side is the electrical "ground" pin. Run a jumper from there to the short leg of the LED. Run another jumper from the other pin to the long leg of the LED. That's it, the LED is ready to work for you.
+Locate the black "header" that has pairs of pins inside. There are two of them, side by side. Focus on the one labeled P11 through P16. Find the pin-pair labeled P16. If you look at the MakerBit with the micro:bit at the top, then the notch in the black header will be on its left side. The pin on that side is the electrical "ground" pin. Run a jumper from it to the short leg of the LED. Run another jumper from the other pin to the long leg of the LED. That's it, the LED is ready to work for you.
 
 Now for some real magic. The gray header has 12 pins labeled T5 through T16. The "T" is for Touch. The magic is that if you connect one of those earring backs to one of those pins, the micro:bit can tell when you touch it! Roger Wagner, the designer of the MakerBit, likes to call them Touchpins, because that is how they work. As far as your code is concerned, they act like pushbuttons. But so much easier to hook up, because it takes only one wire to connect a touchpin.
 
 Look closely at the gray header. Pin T5 is in the bottom-right corner. Start there, and run a jumper wire to the touchpin for Show Breadcrumbs. I ran jumpers to the other pins in this order:
 
-6. Left
-7. Up
-8. Right
-9. Down
-10. Rows
-11. Columns
-12. Start New Game
+<ol start="6">
+  <li>Left</li>
+  <li>Up</li>
+  <li>Right</li>
+  <li>Down</li>
+  <li>Rows</li>
+  <li>Columns</li>
+  <li>Start New Game</li>
+</ol>
 
 You can organize those connections any way you want to. 
 
@@ -120,7 +124,7 @@ Either way, you have got the code now. Download the project onto the micro:bit a
 #### For Code Wizards Only
 So, how do those touchpins cause things to happen in MakeCode?
 
-The MakerBit has special hardware that detects an "event" when someone touches some metal that is connected to a pin in the gray header. Custome blocks in the MakerBit extension MakeCode about the event. For example, the following block triggers an action when the player touches a pin that connects to position number 10 in the gray header. Keep in mind that my version of the game console connects that pin to the touchpin labeled, Rows.
+The MakerBit has special hardware that detects an "event" when someone touches some metal that is connected to a pin in the gray header. Custom blocks in the MakerBit extension inform MakeCode about the event. For example, the following block triggers an action when the player touches a pin that connects to position number 10 in the gray header. Keep in mind that my version of the game console connects that pin to the touchpin labeled, Rows.
 
 ![Event block](https://raw.githubusercontent.com/IowaDave/pxt-makerbit-maze/main/images/touchpin_10_block.jpg)
 
