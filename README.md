@@ -46,13 +46,21 @@ Here are some images showing selected examples of the components. You'll need mo
 #### Mount the MakerBit and the micro:bit
 I cut a slot under one of the box flaps. The micro:bit can stick out through this slot. The MakerBit is secured inside the box with some painter's tape.
 
-#### Close the box top and label it.
-I taped the box shut. A tidy label can make the game console look nice. I simply taped a printout of my PDF on top.
+![Slot for the micro:bit](https://raw.githubusercontent.com/IowaDave/pxt-makerbit-maze/main/images/poke-through.jpg)
+
+#### Label the box top, then flip it over and open the bottom.
+I taped the box shut. A tidy label can make the game console look nice. I simply taped a printout of my PDF on top. You are welcome to use it. The link is up there in the components list.
+
+After placing the label, I flipped the box over and opened the bottom to gain access to the inside. The following picture illustrates the next two steps. Study the picture a minute to get oriented.
+
+![MakerBit and micro:bit](https://raw.githubusercontent.com/IowaDave/pxt-makerbit-maze/main/images/wired_up.jpg)
 
 #### Install the pins and the LED
-This was easy because my label had asterisks where I wanted the components to go. I poked small holes through the asterisks. Then I opened the bottom of the box to gain access to the inside. 
+This was easy because my label had asterisks where I wanted the components to go. I poked small holes through the asterisks. 
 
 Push the LED -- from the inside! -- out through one of the asterisks labeled "Show Breadcrumbs". Try to size the hole for the LED so it goes in without much difficulty but remains tight enough to help hold the bulb in place. I picked the spot directly underneath the word, "Show". Bend the legs of the LED sideways and secure the component from underneath with tape. Then push the earring backs through the remaining asterisks -- from the outside! Secure those with the little clips. You want everything to be nice and solid where it goes through the box lid.
+
+![MakerBit and micro:bit](https://raw.githubusercontent.com/IowaDave/pxt-makerbit-maze/main/images/bits.jpg)
 
 #### Connect jumper wires
 Here's where the MakerBit really shines and makes everything easy. It has special-purpose pins that make magic happen. For example, you can connect an LED directly without needing to place a resistor, as you would otherwise have to do if you were using a regular breadboard. Let's do that part first.
@@ -71,17 +79,21 @@ Look closely at the gray header. Pin T5 is in the bottom-right corner. Start the
 11. Columns
 12. Start New Game
 
-You can organize those connections any way you want to. When we get to the code, you can see how to match up a touchpin with the action you want it to launch.
+You can organize those connections any way you want to. 
+
+When we get to the code, you can see how to match up a touchpin with the action you want it to launch.
+
+That's it! You can close up the box now. 
 
 #### Supply power
-The picture shown here is using the USB cable to bring power from a computer. The MakerBit gives you another way to power your game. It has a round socket the right size for connecting a battery or a "wall wart" charger. 6 volts and 9 volts are typical kinds of batteries you can use. The game will run with only a battery, after you load the code into the micro:bit one time. You'll figure it out.
+The console is shown here using the USB cable to bring power from a computer. The MakerBit gives you another way to power your game. It has a round socket the right size for connecting a battery or a "wall wart" charger. 6 volts and 9 volts are typical kinds of batteries you can use. The game will run with only a battery, after you load the code into the micro:bit one time. The battery could be inside the box. It would be truly portable then. Play your maze game on the train. Earn the envy of your friends.
 
 ## Grab the Essential Extensions
-You can write the micro:bit code for your game using the popular MakeCode editor. There are two ways to do this: the easy way and the slightly-less-easy way.
+You can write the micro:bit code for your game using the popular MakeCode editor. There are two ways to do this: the really easy way and the slightly-less-easy way.
 
-The easy way is to simply load my code directly into the editor. Click the following link: xxx. Do this if you want to replicate my version of a game console and try it out. 
+**The really easy way** is to simply load my code directly into the editor. Click the following link if you choose to replicate my version of a game console and try it out: [https://makecode.microbit.org/#pub:_Uwvg07dX8aLA](https://makecode.microbit.org/#pub:_Uwvg07dX8aLA).
 
-The slightly less easy way is what you will want to do when you begin to write your own game. It's still pretty easy. As in "1-2-3".
+**The slightly less easy way** is what you will want to do when you begin to write your own game. It's still pretty easy. As in "1-2-3".
 1. Start a new project in MakeCode
 2. Import the maze extension for Makecode. 
 * Click the Extensions icon (a little gear in the upper-right area of the editor window.) 
@@ -93,6 +105,17 @@ The slightly less easy way is what you will want to do when you begin to write y
 If you followed the slightly-less-easy steps, you can easily import my game code in the next step.
 
 #### Grab the code
+Did you click the really easy link to open my code in the MakeCode editor? Great! You've got the whole thing. Just save it on your computer and enjoy.
+
+Are you following the slightly-less-easy way? In that case, after you import the extension you still need to get my code. It is stored right here on github as a TypeScript code file. The simplest thing to do is to click open the file in your browser, copy everything, and paste it into MakeCode. Here are the steps.
+
+1. Open the code file in your browser. Click: [https://raw.githubusercontent.com/IowaDave/pxt-makerbit-maze/main/makerbit-maze.ts](https://raw.githubusercontent.com/IowaDave/pxt-makerbit-maze/main/makerbit-maze.ts)
+2. Copy the text that appears.
+3. Go into the MakeCode editor and click on the JavaScript tab.
+4. Paste the text from github into the JavaScript tab.
+5. You can click back to Blocks if you want to. It's optional.
+
+Either way, you have got the code now. Download the project onto the micro:bit and start playing!
 
 
 
