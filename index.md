@@ -95,7 +95,7 @@ The console is shown here using the USB cable to bring power from a computer. Th
 ## Grab the Essential Extensions
 You can write the micro:bit code for your game using the popular MakeCode editor. There are two ways to do this: the really easy way and the slightly-less-easy way.
 
-**The really easy way** is to simply load my code directly into the editor. Click the following link if you choose to replicate my version of a game console and try it out: [https://makecode.microbit.org/#pub:_Uwvg07dX8aLA](https://makecode.microbit.org/#pub:_Uwvg07dX8aLA).
+**The really easy way** is to simply load my code directly into the editor. Click the following link if you choose to replicate my version of a game console and try it out: [https://makecode.microbit.org/#pub:_W4AYTW4RDEvk](https://makecode.microbit.org/#pub:_W4AYTW4RDEvk).
 
 **The slightly less easy way** is what you will want to do when you begin to write your own game. It's still pretty easy. As in "1-2-3".
 1. Start a new project in MakeCode
