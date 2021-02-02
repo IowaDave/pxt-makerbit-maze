@@ -13,7 +13,7 @@ function handleSetColumnsDesired () {
     // increment mazeColumnsDesired value if showing it already
     if (showingCols) {
         mazeColumnsDesired += 1
-        if (mazeColumnsDesired > maze.maximumDimension()) {
+        if (mazeColumnsDesired > 15) {
             mazeColumnsDesired = 2
         }
     } else {
@@ -39,7 +39,7 @@ function handleSetRowsDesired () {
     // increment mazeRowsDesired value if showing it already
     if (showingRows) {
         mazeRowsDesired += 1
-        if (mazeRowsDesired > maze.maximumDimension()) {
+        if (mazeRowsDesired > 15) {
             mazeRowsDesired = 2
         }
     } else {
