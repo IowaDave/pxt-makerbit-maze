@@ -152,9 +152,9 @@ You can enhance the level of challenge and interest by choosing some optional fe
 
 #### Feature Number One: Treasure
 
-You can choose hide treaure in the maze! You can even give the treasure magical power to unlock the exit portal. Use the ```set treasure``` block:
+You can choose hide treaure in the maze! You can even give the treasure magical power to unlock the exit portal. Use the ```set maze treasure``` block:
 
-![The set treasure block](https://raw.githubusercontent.com/IowaDave/pxt-maze/master/.github/makecode/mazeTreasureBlock.png)
+![The set maze treasure block](https://raw.githubusercontent.com/IowaDave/pxt-maze/master/.github/makecode/mazeTreasureBlock.png)
 
 The treasure settings are:
 
@@ -164,15 +164,15 @@ The treasure settings are:
 
 The default treasure setting is "none".
 
-There is even a block that game developers can use to tell when a player has taken the treasure. The following illustrations shows how the block could be used to add 10,000 points to a player's score for finding the treasure.
+There is even a block called ```player has treasure``` that game developers can use to tell when a player has taken the treasure. The following illustrations shows how the block could be used to add 10,000 points to a player's score for finding the treasure.
 
-![The treasure-taken block](https://raw.githubusercontent.com/IowaDave/pxt-maze/master/.github/makecode/mazeTreasureReporterBlock.png)
+![The player has treasure block](https://raw.githubusercontent.com/IowaDave/pxt-maze/master/.github/makecode/mazeTreasureReporterBlock.png)
 
 #### Feature Number Two: Random Portals
 
-You can choose to place the entrance and exit portals at random locations, rather than at the corners of the maze. This makes the game more interesting and challenging because the direction to take toward the exit becomes less predictable. Use the ```set maze portals``` block:
+You can choose to place the entrance and exit portals at random locations, rather than at the corners of the maze. This makes the game more interesting and challenging because the direction to take toward the exit becomes less predictable. Use the ```place maze portals``` block:
 
-![The set maze portals block](https://raw.githubusercontent.com/IowaDave/pxt-maze/master/.github/makecode/mazeCornersBlock.png)
+![The place maze portals block](https://raw.githubusercontent.com/IowaDave/pxt-maze/master/.github/makecode/mazeCornersBlock.png)
 
 The portal settings are:
 
