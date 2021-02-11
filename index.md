@@ -95,7 +95,7 @@ The console is shown here using the USB cable to bring power from a computer. Th
 ## Grab the Essential Extensions
 You can write the micro:bit code for your game using the popular MakeCode editor. There are two ways to do this: the really easy way and the slightly-less-easy way.
 
-**The really easy way** is to simply load my code directly into the editor. Click the following link if you choose to replicate my version of a game console and try it out: [https://makecode.microbit.org/#pub:_W4AYTW4RDEvk](https://makecode.microbit.org/#pub:_W4AYTW4RDEvk).
+**The really easy way** is to simply load my code directly into the editor. Click the following link if you choose to replicate my version of a game console and try it out: [https://makecode.microbit.org/#pub:_g1pgqya3fLvc](https://makecode.microbit.org/#pub:_g1pgqya3fLvc).
 
 **The slightly less easy way** is what you will want to do when you begin to write your own game. It's still pretty easy. As in "1-2-3".
 1. Start a new project in MakeCode
@@ -146,6 +146,43 @@ Here is how to play. First, set the dimensions you want for your maze.
 
 2 x 2 is trivial, and is the default. 5 x 5 plays pretty fast. It gets a little more difficult with larger dimensions.
 
+### Optional maze features
+
+You can enhance the level of challenge and interest by choosing some optional features of the game.
+
+#### Feature Number One: Treasure
+
+You can choose hide treaure in the maze! You can even give the treasure magical power to unlock the exit portal. Use the ```set treasure``` block:
+
+![The set treasure block](https://raw.githubusercontent.com/IowaDave/pxt-maze/master/.github/makecode/MazeTreasureBlock.png)
+
+The treasure settings are:
+
+* **none** = no treasure
+* **hidden** = yes, hide a treasure, but leave the exit portal open
+* **magic key** = yes, hide a treasure and also hide the exit portal. Reveal the exit portal only after finding the treasure.
+
+The default treasure setting is "none".
+
+There is even a block that game developers can use to tell when a player has taken the treasure. The following illustrations shows how the block could be used to add 10,000 points to a player's score for finding the treasure.
+
+![The set treasure block](https://raw.githubusercontent.com/IowaDave/pxt-maze/master/.github/makecode/MazeTreasureTakenBlock.png)
+
+#### Feature Number Two: Random Portals
+
+You can choose to place the entrance and exit portals at random locations, rather than at the corners of the maze. This makes the game more interesting and challenging because the direction to take toward the exit becomes less predictable. Use the ```set maze portals``` block:
+
+![The set maze portals block](https://raw.githubusercontent.com/IowaDave/pxt-maze/master/.github/makecode/MazeCornersBlock.png)
+
+The portal settings are:
+
+* **corners** = entrance at upper-left corner and exit at lower-right corner
+* **random** = entrance and exit portals at random locations along the left- and right-hand sides of the maze, respectively
+
+The default setting for the portals is "corners"
+
+### Start the game!
+
 Touch the touchpin labeled Start New Game to, well... to start a new game. You will be placed just outside the upper-left corner of the maze. The entry cell is indicated by a double left-side wall. It looks like this:
 
 ![The Entrance into the maze](https://raw.githubusercontent.com/IowaDave/pxt-maze/master/.github/makecode/Entrance.jpg)
@@ -157,6 +194,12 @@ Use the directional touchpins to navigate. Your first move is to the right. Your
 ![The Exit from the maze](https://raw.githubusercontent.com/IowaDave/pxt-maze/master/.github/makecode/Exit.jpg)
 
 Woohoo! You won!
+
+The treasure looks like a flashy diamond in the middle of a cell:
+
+![Treasure in a maze cell](https://raw.githubusercontent.com/IowaDave/pxt-maze/master/.github/makecode/treasure_icon.png)
+
+Players "take" the treasure by leaving the cell where they found it. If they return to that cell the treasure will not appear again, because the player has taken it!
 
 The game automatically drops a breadcrumb when you leave a cell. During play, you may view the breadcrumbs. Press the touchpin under Show Breadcrumbs on the game console. The LED will illuminate to indicate that breadcrumbs are being shown, and you will see a dot in the center of the display when you enter a cell where you have been before. Like this:
 
