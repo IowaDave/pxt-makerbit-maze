@@ -3,7 +3,7 @@
 
 Yes, the micro:bit can be an interactive game! Do you like mazes? Imagine exploring a maze hidden inside a micro:bit. With a little bit of DIY hardware and some available, custom MakeCode blocks, you can!
 
-![Maze Game Console](https://raw.githubusercontent.com/IowaDave/pxt-makerbit-maze/main/images/console.jpg)
+![Maze Game Console](https://raw.githubusercontent.com/IowaDave/pxt-makerbit-maze/main/images/console.png)
 
 ## The Concept of a micro:bit Maze
 Here is the idea: use the LED panel of the micro:bit to show the "walls" as you move from one place to another in a virtual maze stored in the device's memory. Navigate from one location to the next, until you find your way to the Exit. Hoorah! You win!
@@ -90,7 +90,7 @@ That's it! You can close up the box now.
 #### Supply power
 The console is shown here using the USB cable to bring power from a computer. The MakerBit gives you another way to power your game. It has a round socket the right size for connecting a battery or a "wall wart" charger. 6 volts and 9 volts are typical kinds of batteries you can use. The game will run with only a battery, after you load the code into the micro:bit one time. The battery could be inside the box. It would be truly portable then. Play your maze game on the train. Earn the envy of your friends.
 
-![Maze Game Console](https://raw.githubusercontent.com/IowaDave/pxt-makerbit-maze/main/images/console.jpg)
+![Maze Game Console](https://raw.githubusercontent.com/IowaDave/pxt-makerbit-maze/main/images/console.png)
 
 ## Grab the Essential Extensions
 You can write the micro:bit code for your game using the popular MakeCode editor. There are two ways to do this: the really easy way and the slightly-less-easy way.
